@@ -1,0 +1,78 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  "primary": #2a5caa,
+  "secondary": #999,
+  "dark": #222,
+  "light": #e9ecef,
+);
+
+$hero-gradient: linear-gradient(65deg, theme_color("primary") 7%, theme_color('secondary') 88%);
+
+//Set Background Colors
+@each $label, $color in $theme-colors {
+  .bg-#{$label} {
+    background-color: $color;
+    transition: all 200ms ease-in-out;
+  }
+}
+
+//Collapse padding when like colors are next to each other
+@each $label, $color in $theme-colors {
+  section.bg-#{$label} + section.bg-#{$label} {
+    padding-top: 0;
+  }
+}
+
+@mixin slick-arrows($size, $color) {
+  .slick-next,
+  .slick-prev {
+    height: $size;
+    width: $size;
+    border-right: 2px solid $color;
+    border-bottom: 2px solid $color;
+    transform: rotate(-45deg);
+    border-radius: 0;
+
+    &::before {
+      content: '';
+    }
+  }
+
+  .slick-next {
+    right: -40px;
+  }
+
+  .slick-prev {
+    transform: rotate(135deg);
+    left: -40px;
+  }
+}
+
+$navbar-light-hover-color: theme_color('primary');
+$navbar-light-active-color: theme_color('primary');
+
+//Heading and Body fonts
+$headings-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$body-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+
+// Global
+
+//Section
+$section-padding: 3em 0;
+
+//Card
+$card-border: 1px solid theme_color("light");
+$card-border-radius: 0;
+$card-spacer-x: 0.6rem;
+
+$headings-color: theme_color('primary');
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 800px,
+  lg: 1440px,
+  xl: 1900px
+);

@@ -1,0 +1,15 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+
+  .card {
+    flex: 0 0 100%;
+  }
+
+  .card-title {
+    text-align: center;
+    font-size: $font-size-base;
+  }
+}
+

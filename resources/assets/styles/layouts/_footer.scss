@@ -1,0 +1,28 @@
+footer {
+  color: $gray-200;
+  font-size: $font-size-sm;
+
+  p {
+    font-size: $font-size-sm;
+  }
+
+  section {
+    padding: 1rem 0;
+  }
+
+  .menu-item a {
+    margin-right: 1rem;
+    color: white;
+    font-weight: lighter;
+  }
+
+  .footer-top {
+    color: theme-color('primary');
+    background-color: $gray-200;
+  }
+
+  .footer-base {
+    background-color: black;
+    padding: 0.5em 0;
+  }
+}

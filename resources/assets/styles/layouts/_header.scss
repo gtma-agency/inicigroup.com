@@ -1,0 +1,15 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+.banner {
+  border-bottom: 1px solid theme_color("light");
+}
+
+.dropdown-menu {
+  border-radius: 0;
+}
