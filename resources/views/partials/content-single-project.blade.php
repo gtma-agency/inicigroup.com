@@ -25,7 +25,7 @@
                     @foreach( $images as $image)
                         <div class="col-md-6 masonry-item">
                             <a class="project-image" href="#" data-featherlight="{{ $image['url'] }}">
-                                <img class='img-fluid' src="{{ $image['sizes']['medium_large'] }}"
+                                <img class='img-fluid' src="{{ $image['sizes']['basis-project'] }}"
                                      alt="{{ $image['alt'] }}">
                             </a>
                         </div>

@@ -13,7 +13,7 @@
                 @endif
 
                 @if ($has_secondary)
-                    <img class="secondary-staff-img img-fluid" class='img-fluid' src="{{ get_field('secondary_staff_image')['sizes']['large'] }}" alt="{{ get_field('secondary_staff_image')['alt'] }}">
+                    <img class="secondary-staff-img img-fluid" class='img-fluid' src="{{ get_field('secondary_staff_image')['sizes']['basis-staff'] }}" alt="{{ get_field('secondary_staff_image')['alt'] }}">
                 @endif
 
             </div>

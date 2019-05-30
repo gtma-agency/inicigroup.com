@@ -16,13 +16,13 @@
                     <article @php(post_class('col-md-3 cards'))>
                         <div class="card">
                             @if(has_post_thumbnail())
-                            <a href="{{ the_permalink() }}">
-                                {!! the_post_thumbnail('medium-large', ['class' => 'img-fluid']) !!}
+                            <a href="{{ the_permalink() }}" aria-label="{{ the_title() }}">
+                                {!! the_post_thumbnail('basis-announcement', ['class' => 'img-fluid']) !!}
                             </a>
                             @endif
                             <div class="card-body">
-                                <a href="{{ the_permalink() }}">
-                                    <a href="{{ the_permalink() }}">
+                                <a href="{{ the_permalink() }}" aria-label="{{ the_title() }}">
+                                    <a href="{{ the_permalink() }}" aria-label="{{ the_title() }}">
                                         <h5 class="card-title">{{ the_title() }}</h5>
                                     </a>
                                 </a>

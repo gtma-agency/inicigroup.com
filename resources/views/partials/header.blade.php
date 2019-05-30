@@ -1,7 +1,7 @@
 <header class="banner">
   <div class="container">
     <nav class="navbar navbar-expand-md navbar-light">
-      <a class="navbar-brand" href="{{ home_url('/') }}"><img height="51" src="{{ App\asset_path('images/inici-group-logo.svg') }}" /></a>
+      <a class="navbar-brand" href="{{ home_url('/') }}" aria-label="Home"><img height="51" src="{{ App\asset_path('images/inici-group-logo.svg') }}" alt="{{ get_bloginfo('name') }} logo"/></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#primary-navigation" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>      <?php

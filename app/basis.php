@@ -211,6 +211,10 @@ function basis_gallery( $output = '', $atts, $instance ) {
 add_filter( 'post_gallery', 'basis_gallery', 99, 3 );
 
 add_image_size( 'basis-admin-post-featured-image', 50, 50, true );
+add_image_size( 'basis-announcement', 510, 340, true );
+add_image_size( 'basis-flex', 420, 280, true );
+add_image_size( 'basis-staff', 480, 720, true );
+add_image_size( 'basis-project', 480, 330, true );
 
 add_filter( 'manage_posts_columns', 'basis_add_post_admin_thumbnail_column', 2 );
 add_filter( 'manage_pages_columns', 'basis_add_post_admin_thumbnail_column', 2 );

@@ -1,6 +1,6 @@
 <article @php post_class() @endphp>
     <header>
-        <a href="{{ get_permalink() }}">
+        <a href="{{ get_permalink() }}" aria-label="{{ the_title() }}">
         @if( has_post_thumbnail() )
             {{ the_post_thumbnail('medium', ['class' => 'img-fluid']) }}
         @else

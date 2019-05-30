@@ -1,12 +1,12 @@
 <article @php(post_class('d-flex'))>
     <div class="card">
         @if(has_post_thumbnail())
-            <a href="{{ the_permalink() }}">
-                {!! the_post_thumbnail('large', ['class' => 'img-fluid']) !!}
+            <a href="{{ the_permalink() }}" aria-label="{{ the_title() }}">
+                {!! the_post_thumbnail('basis-flex', ['class' => 'img-fluid']) !!}
             </a>
         @endif
         <div class="card-body">
-            <a href="{{ the_permalink() }}">
+            <a href="{{ the_permalink() }}" aria-label="{{ the_title() }}">
                 <h4 class="post-card-title">
                     {{ the_title() }}
                 </h4>
@@ -15,7 +15,7 @@
             <div class="card-text">{{ the_excerpt() }}</div>
         </div>
         <div class="card-footer">
-            <a href="{{ the_permalink() }}" class="card-link link-arrow">Read More</a>
+            <a href="{{ the_permalink() }}" class="card-link link-arrow" aria-label="{{ the_title() }}">Read More</a>
         </div>
     </div>
 </article>
